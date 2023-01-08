@@ -56,7 +56,7 @@ public class IdGenerator {
     }
 
     public String generate() {
-        return this.prefix + this.lastId.incrementAndGet() + this.suffix;
+        return (this.prefix + this.lastId.incrementAndGet() + this.suffix).toString();
     }
 
     public String generateSuffix() {
@@ -65,17 +65,18 @@ public class IdGenerator {
         Integer randomNumber = min + (int) (Math.random() * ((max - min) + 1));
         return randomNumber.toString();
     }
-
-    // public static void main(String[] args) {
-    // IdGenerator generator = new IdGenerator();
-    // System.out.println("Please enter new customer's initial name");
-    // Scanner input = new Scanner(System.in);
-    // String prefixInput = input.nextLine();
-    // String suffixInput = generator.generateSuffix();
-    // generator.setPrefix(prefixInput);
-    // generator.init(prefixInput, suffixInput, 1);
-    // String id = generator.generate();
-    // Customer sv = new Customer(id);
-    // System.out.println(sv.getId());
-    // }
+//    public String toString(IdGenerator id){
+//        String newId = (String) id;
+//    }
+//     public static void main(String[] args) {
+//         IdGenerator id = new IdGenerator();
+//         System.out.println("Please enter package's initial");
+//         Scanner input = new Scanner(System.in);
+//         String prefixInput = input.nextLine();
+//         String suffixInput = id.generateSuffix();
+//         id.init(prefixInput, suffixInput, 1);
+//         String newId = id.generate();
+// //        System.out.println(id + "sdafsd");
+//         System.out.println(newId);
+//     }
 }

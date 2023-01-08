@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82903925-4564-4f90-a3f1-e24fa9615e0d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customers/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customers/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customers/CustomerManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customers/CustomerManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customers/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customers/IdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pets/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pets/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pets/PetManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pets/PetManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ServiceManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServiceManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Case-study-Hien/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Case-study-Hien/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,7 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/hienthu/Documents/codegym/CaseStudyHienNew/Case-study-Hien",
+    "last_opened_file_path": "/Users/hienthu/Documents/codegym/CaseStudyHienNew/petStoreManagement",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,7 +46,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.IdGenerator">
+  <component name="RunManager" selected="Application.CustomerMenu">
     <configuration name="CustomerMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="customers.CustomerMenu" />
       <module name="Case-study-Hien" />
@@ -82,8 +75,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IdGenerator" />
         <item itemvalue="Application.CustomerMenu" />
+        <item itemvalue="Application.IdGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -97,6 +90,7 @@
       <updated>1672798473437</updated>
       <workItem from="1672798475936" duration="30132000" />
       <workItem from="1672923081659" duration="14667000" />
+      <workItem from="1672992717538" duration="2822000" />
     </task>
     <servers />
   </component>

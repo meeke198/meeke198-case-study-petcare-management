@@ -1,4 +1,5 @@
 package customers;
+import java.util.ArrayList;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -9,7 +10,7 @@ import customers.IdGenerator;
 public class Customer {
     private String id;
     private String gender;
-    private String petId;
+    private List<String> petId;
     private String name;
     private int age;
     private String address;
@@ -21,25 +22,32 @@ public class Customer {
     public void setAge(int age) {
         this.age = age;
     }
-//    public Customer(String id){
-//        this.id = id;
-//    }
+  
 
+    /**
+     * @param id
+     * @param name
+     * @param gender
+     * @param age
+     * @param address
+     * @param phoneNumber
+     */
     public Customer (String id, String name, String gender, int age,
                      String address, String phoneNumber){
         this.id = id;
         this.name = name;
         this.gender = gender;
         this.age = age;
+        this.petId = new ArrayList<>();
         this.address = address;
         this.phoneNumber = phoneNumber;
     }
 
-    public String getPetId() {
+    public List<String> getPetId() {
         return petId;
     }
 
-    public void setPetId(String petId) {
+    public void setPetId(List <String> petId) {
         this.petId = petId;
     }
 
