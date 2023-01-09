@@ -19,19 +19,19 @@ public final class PetManagement {
     private PetManagement() {
         petList = new HashMap<>();
         petList.put("PT00121",
-                new Pet("PT00121", "Luo", "Golden Retriever", "CS00120", "CS00120", "This dog need shredding"));
+                new Pet("PT00121", "Luo", "Golden Retriever", "CS00120", "SV00121", "This dog need shredding"));
         petList.put("PT00122",
-                new Pet("PT00122", "SiPog", "Chihuahua", "CS00121", "CS00121", "This dog need shredding"));
-        petList.put("PT00123", new Pet("PT00123", "Shark", "Husky", "CS00122", "CS00120", "This dog need shredding"));
+                new Pet("PT00122", "SiPog", "Chihuahua", "CS00121", "SV00122", "This dog need shredding"));
+        petList.put("PT00123", new Pet("PT00123", "Shark", "Husky", "CS00122", "SV00123", "This dog need shredding"));
         petList.put("PT00124",
-                new Pet("PT00124", "Tarn", "Yorkshire Terrier", "CS00123", "CS00120", "This dog need shredding"));
-        petList.put("PT00125", new Pet("PT00125", "Nos", "Dachshund", "CS00124", "CS00120", "This dog need shredding"));
+                new Pet("PT00124", "Tarn", "Yorkshire Terrier", "CS00123", "SV00124", "This dog need shredding"));
+        petList.put("PT00125", new Pet("PT00125", "Nos", "Dachshund", "CS00124", "SV00125", "This dog need shredding"));
         petList.put("PT00126",
-                new Pet("PT00126", "Fluffy", "Shiba Inu", "CS00125", "CS00120", "This dog need shredding"));
-        petList.put("PT00127", new Pet("PT00127", "Popcorn", "Poodle", "CS00126", "CS00120", "This dog need shredding"));
-        petList.put("PT00128", new Pet("PT00128", "Leia", "Husky", "CS00127", "CS00120", "This dog need shredding"));
+                new Pet("PT00126", "Fluffy", "Shiba Inu", "CS00125", "SV00126", "This dog need shredding"));
+        petList.put("PT00127", new Pet("PT00127", "Popcorn", "Poodle", "CS00126", "SV00126", "This dog need shredding"));
+        petList.put("PT00128", new Pet("PT00128", "Leia", "Husky", "CS00127", "SV00122", "This dog need shredding"));
         petList.put("PT00129",
-                new Pet("PT00129", "Pew", "Yorkshire Terrier", "CS00128", "CS00120", "This dog need shredding"));
+                new Pet("PT00129", "Pew", "Yorkshire Terrier", "CS00128", "SV00122", "This dog need shredding"));
 //        petList.put("PT00130", new Pet("PT00130", "Nos", "Dachshund", "CS00127", "CS00120", "This dog need shredding"));
 //        petList.put("PT00131",
 //                new Pet("PT00131", "Candy", "Shiba Inu", "CS00128", "CS00120", "This dog need shredding"));
