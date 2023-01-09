@@ -2,18 +2,18 @@ package services;
 
 // import customers.Customer;
 
+import customers.Customer;
+
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public final class ServiceManagement {
 
-    private static volatile ServiceManagement departmentManagement;
     private static ServiceManagement serviceManagement;
-    private Map<String, Service> ServiceList;
+    private Map<String, Service> serviceList;
     
     public static ServiceManagement getServiceManagement() {
-
         synchronized (ServiceManagement.class) {
             if (serviceManagement == null) {
                 serviceManagement = new ServiceManagement();
@@ -22,54 +22,63 @@ public final class ServiceManagement {
         return serviceManagement;
     }
 
-    private static Scanner input = new Scanner(System.in);
+//    private static Scanner input = new Scanner(System.in);
 
     private ServiceManagement() {
-        ServiceList = new HashMap<>();
-        ServiceList.put("SV00121", new Service("SV00121", "Shred", 20, "30 mins shredding cost"));
-        ServiceList.put("SV00122", new Service("SV00122", "Groom", 20, "30 mins grooming cost"));
-        ServiceList.put("SV00123", new Service("SV00123", "Massage", 20, "30 mins full body massage cost"));
-        ServiceList.put("SV00124", new Service("SV00124", "Pedicure", 20, "30 mins peducure cost"));
-        ServiceList.put("SV00125", new Service("SV00125", "Dental", 20, "30 mins full dental package cost, X-ray included"));
-        ServiceList.put("SV00126", new Service("SV00126", "General Exam", 20, "30 mins shredding cost"));
+        serviceList = new HashMap<>();
+        serviceList.put("SV00121", new Service("SV00121", "Shred", 20, "30 mins shredding cost"));
+        serviceList.put("SV00122", new Service("SV00122", "Groom", 20, "30 mins grooming cost"));
+        serviceList.put("SV00123", new Service("SV00123", "Massage", 20, "30 mins full body massage cost"));
+        serviceList.put("SV00124", new Service("SV00124", "Pedicure", 20, "30 mins peducure cost"));
+        serviceList.put("SV00125", new Service("SV00125", "Dental", 20, "30 mins full dental package cost, X-ray included"));
+        serviceList.put("SV00126", new Service("SV00126", "General Exam", 20, "30 mins shredding cost"));
 
     }
 
     public void add(String id, Service newService) {
         if (newService != null) {
-            ServiceList.put(id, newService);
+            serviceList.put(id, newService);
         }
     }
 
-    public void remove(String id) {
-        ServiceList.remove(id);
+    public static void setServiceManagement(ServiceManagement serviceManagement) {
+        ServiceManagement.serviceManagement = serviceManagement;
+    }
+
+    public Map<String, Service> getServiceList() {
+        return serviceList;
+    }
+
+    public void setServiceList(Map<String, Service> serviceList) {
+        this.serviceList = serviceList;
+    }
+
+    public void removeService(String id) {
+        serviceList.remove(id);
     }
 
     public String searchById(String id) {
-        return ServiceList.get(id).toString();
+        return serviceList.get(id).toString();
     }
 
     public String searchByName(String serviceName) {
-        for (Map.Entry<String, Service> entry : ServiceList.entrySet()) {
+        for (Map.Entry<String, Service> entry : serviceList.entrySet()) {
             String key = entry.getKey();
             Service value = entry.getValue();
             if (serviceName.equals(value.getServiceName())) {
-                return ServiceList.get(key).toString();
+                return serviceList.get(key).toString();
             }
         }
         return null;
     }
-
-    public StringBuilder researchByName(String name) {
-        StringBuilder result = new StringBuilder("");
-        for (Map.Entry<String, Service> entry : ServiceList.entrySet()) {
+    public void displayAllService() {
+        StringBuilder text = new StringBuilder("");
+        for (Map.Entry<String, Service> entry : serviceList.entrySet()) {
             String key = entry.getKey();
             Service value = entry.getValue();
-            if (name.equals(value.getServiceName())) {
-                result.append(ServiceList.get(key).toString());
-            }
+            text.append( key + "  || " + value.getServiceName() + "|| Price: " + value.getPrice() + "|| Description: " + value.getDescription()+".\n");
         }
-        return result;
+        System.out.println(text);
     }
 
     public void editName(Service service, String newServiceName) {

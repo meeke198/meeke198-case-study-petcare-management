@@ -1,6 +1,9 @@
 package pets;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 public class Pet {
     private String petId;
@@ -10,7 +13,7 @@ public class Pet {
     private String serviceId;
     private String description;
 
-    private LinkedList<String> serviceHistory;
+    private Map<String, String> serviceHistory;
 
     public void setPetId(String petId) {
         this.petId = petId;
@@ -36,7 +39,6 @@ public class Pet {
 
     }
 
-  
 
     public Pet(String petId, String name, String breed, String ownerId, String serviceId,
                String description) {
@@ -46,14 +48,15 @@ public class Pet {
         this.ownerId = ownerId;
         this.serviceId = serviceId;
         this.description = description;
+        this.serviceHistory = new HashMap<String, String>();
 
     }
 
-    public LinkedList<String> getServiceHistory() {
+    public Map<String, String> getServiceHistory() {
         return serviceHistory;
     }
 
-    public void setServiceHistory(LinkedList<String> serviceHistory) {
+    public void setServiceHistory(Map<String, String> serviceHistory) {
         this.serviceHistory = serviceHistory;
     }
 
@@ -103,10 +106,11 @@ public class Pet {
     @Override
     public String toString() {
         return "Pet{" +
-                "petId=" + petId +
+                "petId='" + petId + '\'' +
                 ", name='" + name + '\'' +
+                ", breed='" + breed + '\'' +
                 ", ownerId='" + ownerId + '\'' +
-                ", serviceId=" + serviceId +
+                ", serviceId='" + serviceId + '\'' +
                 ", description='" + description + '\'' +
                 ", serviceHistory=" + serviceHistory +
                 '}';
