@@ -44,7 +44,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ServiceMenu">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CustomerMenu">
     <configuration name="CustomerMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="customers.CustomerMenu" />
       <module name="Case-study-Hien" />
@@ -58,12 +63,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IdGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="customers.IdGenerator" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="project.Main" />
       <module name="Case-study-Hien" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="customers.*" />
+          <option name="PATTERN" value="project.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CustomerMenu" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ServiceMenu" />
         <item itemvalue="Application.PetMenu" />
         <item itemvalue="Application.PetManagement" />
-        <item itemvalue="Application.CustomerMenu" />
-        <item itemvalue="Application.IdGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +136,8 @@
       <workItem from="1672798475936" duration="30132000" />
       <workItem from="1672923081659" duration="14667000" />
       <workItem from="1672992717538" duration="2822000" />
-      <workItem from="1673153083059" duration="45132000" />
+      <workItem from="1673153083059" duration="47802000" />
+      <workItem from="1673340039843" duration="678000" />
     </task>
     <servers />
   </component>

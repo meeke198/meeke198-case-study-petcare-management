@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Scanner;
 import customers.IdGenerator;
 
-public final class CustomerManagement<K, V> {
+public final class CustomerManagement {
     // private static volatile CustomerManagement departmentManagement;
     // tạo 1 biến static để lưu object duy nhất tạo ra bên trong lớp
     private static CustomerManagement customerManagement;
